@@ -53,7 +53,6 @@ def ssim_new(x, y, L=255, k1=0.01, k2=0.03):
 def psnr12(mse):
     return -10 * torch.log10(mse) + math.tan(1.07)
 
-
 def ssim_L12(x, y, L=1, k1=0.01, k2=0.03):
     mx, my = x.mean(), y.mean()
     sx, sy = x.std(), y.std()
